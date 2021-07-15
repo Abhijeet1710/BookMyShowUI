@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import DefaultHOC from "./HOC/Default.HOC";
 
 // Components
-import Delete from "./components/Delete";
+import HomePage from "./pages/Home.page";
 
 function App() {
   return (
     <>
-      <DefaultHOC path="/" exact component={Delete} />
+      <DefaultHOC path="/" exact component={HomePage} />
     </>
   );
 }
