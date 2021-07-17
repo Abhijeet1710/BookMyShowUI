@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import settings from "../../config/PosterCorousal.config";
 
 const EntertainmentCard = (props) => {
   return (
@@ -26,39 +27,6 @@ const EntertainmentCardSlider = () => {
     "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png",
     "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/esports-collection-202011150107.png",
   ];
-
-  const settings = {
-    infinity: false,
-    autoplay: false,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    InitialSlide: 0,
-    responsive: [
-      {
-        breakpoints: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          infinite: true,
-        },
-      },
-      {
-        breakpoints: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          InitialSlide: 1,
-        },
-      },
-      {
-        breakpoints: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>
